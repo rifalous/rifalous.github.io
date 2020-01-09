@@ -973,7 +973,11 @@ span, a, a:hover {
   .mb-md30 {
     margin-bottom: 30px;
   }
-  
+
+  .mb-md0 {
+    margin-bottom: 0;
+  }
+
   .navbar .navbar-collapse {
     max-height: 320px;
     overflow: auto;
@@ -1006,15 +1010,6 @@ span, a, a:hover {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .mb-sm50 {
-    margin-bottom: 50px;
-  }
-
-  .mb-sm30 {
-    margin-bottom: 30px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
 
@@ -1024,7 +1019,7 @@ span, a, a:hover {
   width: 30px;
   height: 30px;
   margin-right: 7px;
-  background:url(../img/gdp-logo-white.png)no-repeat;
+  background:url(../img/rf-logo-white.svg)no-repeat;
   display: inline-block;
   background-position: center;
   background-size: contain;
@@ -1032,11 +1027,7 @@ span, a, a:hover {
 }
 
 .nav-scroll .logo-bg {
-  background:url(../img/gdp-logo.png)no-repeat;
-  display: inline-block;
-  background-position: center;
-  background-size: contain;
-  margin-bottom: -7px;
+  background:url(../img/rf-logo.svg)no-repeat;
 }
 
 .hero .hero-img {
@@ -1044,15 +1035,38 @@ span, a, a:hover {
     position: relative;
     -webkit-transition: all .4s;
     transition: all .4s;
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     overflow: hidden;
     border-radius: 50%;
 }
 
 .hero-img.mb-md50 img {
     width: 120%;
-    margin: -70px -31px 0;
+    margin: 0px -31px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .mb-sm50 {
+    margin-bottom: 50px;
+  }
+
+  .mb-sm30 {
+    margin-bottom: 30px;
+  }
+
+  .hero .hero-img {
+    width: 240px;
+    height: 240px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-img.mb-md50 img {
+    width: 132%;
+    margin-left: -23px;
+  }
 }
 
 .grey {

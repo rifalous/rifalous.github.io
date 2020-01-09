@@ -1236,6 +1236,19 @@ span, a, a:hover {
 	.mb-sm30{
 		margin-bottom: 30px;
 	}
+
+	.hero .hero-img {
+		width: 240px;
+		height: 240px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.hero-img.mb-md50 img {
+		width: 132%;
+		margin-left: -23px;
+	}
 }
 
 
